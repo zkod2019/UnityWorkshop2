@@ -28,13 +28,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other){
+    private void OnCollisionEnter(Collision other){
         if (other.gameObject.CompareTag("Floor")){
             isJumping = false;
         }
     }
 
-    private void OnCollisionExit2D(Collision2D other){
+    private void OnCollisionExit(Collision other){
         if (other.gameObject.CompareTag("Floor")){
             isJumping = true;
         }
