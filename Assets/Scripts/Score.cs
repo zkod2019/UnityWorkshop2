@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
+ using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class Score : MonoBehaviour
             Debug.Log(scoreText);
             scoreAmount = scoreAmount + 1;
             scoreText.text =  "Score: " + scoreAmount.ToString();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             
         }
     }

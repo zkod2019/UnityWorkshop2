@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+ using UnityEngine.SceneManagement;
+
 
 public class DeathScript : MonoBehaviour
 {
@@ -20,7 +22,8 @@ public class DeathScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision other){
         if (other.gameObject.CompareTag("Player")){
-            Player.transform.position = startPoint.transform.position;
+            //Player.transform.position = startPoint.transform.position;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
