@@ -9,7 +9,14 @@ public class Score : MonoBehaviour
 {
     public static int scoreAmount;
     public Text scoreText;
-     public GameObject Player;
+    public GameObject Player;
+    public static float xRotation = 0f;
+    public float rotationSpeed = 0.00001f;
+
+    void FixedUpdate() {
+        gameObject.transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f, Space.Self);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

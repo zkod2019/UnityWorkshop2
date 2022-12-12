@@ -1228,6 +1228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 1058141280}
   Player: {fileID: 915822951}
+  rotationSpeed: -50
 --- !u!65 &774164297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1667,6 +1668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 1058141280}
   Player: {fileID: 915822951}
+  rotationSpeed: 0.00001
 --- !u!65 &1048093327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1901,6 +1903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 383697808}
   Player: {fileID: 915822951}
+  rotationSpeed: 50
 --- !u!65 &1165284400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2140,6 +2143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 1058141280}
   Player: {fileID: 915822951}
+  rotationSpeed: -50
 --- !u!65 &1295976149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2285,6 +2289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 1058141280}
   Player: {fileID: 915822951}
+  rotationSpeed: -50
 --- !u!65 &1311837048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2382,6 +2387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 383697808}
   Player: {fileID: 915822951}
+  rotationSpeed: 50
 --- !u!65 &1343158784
 BoxCollider:
   m_ObjectHideFlags: 0

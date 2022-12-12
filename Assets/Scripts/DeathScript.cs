@@ -8,21 +8,15 @@ public class DeathScript : MonoBehaviour
 {
     public GameObject startPoint;
     public GameObject Player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static float xRotation = 0f;
+    public float rotationSpeed = 0.00001f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void FixedUpdate() {
+        gameObject.transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f, Space.Self);
     }
 
     private void OnCollisionEnter(Collision other){
         if (other.gameObject.CompareTag("Player")){
-            //Player.transform.position = startPoint.transform.position;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
