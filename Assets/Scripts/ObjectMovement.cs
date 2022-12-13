@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloorMovement : MonoBehaviour
+public class ObjectMovement : MonoBehaviour
 {
     [SerializeField] GameObject[] pointsLocation;
     int currentLocationIndex = 0;
