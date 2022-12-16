@@ -20,24 +20,25 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //scoreText = GetComponent<Text>;
         scoreAmount =0;
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         scoreText.text = "Score: " + scoreAmount;
-        
     }
 
     private void OnCollisionEnter(Collision other){
         if (other.gameObject.CompareTag("Player")){
-            scoreText=GameObject.Find("ScoreText").GetComponent<Text>(); 
+            // retrive the ScoreText component
+            scoreText = GameObject.Find("ScoreText").GetComponent<Text>(); 
             Debug.Log(scoreText);
+            // increase score by one everytime a point it gained
             scoreAmount = scoreAmount + 1;
+            // update score count
             scoreText.text =  "Score: " + scoreAmount.ToString();
+            // hide the award object so it can't be recollected in the same round
             gameObject.SetActive(false);
             
         }

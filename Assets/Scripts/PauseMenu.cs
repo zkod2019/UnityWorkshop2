@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
 
     void Update(){
+        // when pressing Esc, a Pause Menu will show up. If already in Pause Menu, it will disappear
         if (Input.GetKeyDown(KeyCode.Escape)){
             if (GameIsPaused){
                 Resume();

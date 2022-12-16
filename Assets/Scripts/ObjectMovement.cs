@@ -6,7 +6,6 @@ public class ObjectMovement : MonoBehaviour
 {
     [SerializeField] GameObject[] pointsLocation;
     int currentLocationIndex = 0;
-
     [SerializeField] float speed =1f;
 
     // Update is called once per frame

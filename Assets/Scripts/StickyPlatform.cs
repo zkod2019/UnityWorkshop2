@@ -9,6 +9,7 @@ public class StickyPlatform : MonoBehaviour
             collision.gameObject.transform.SetParent(transform);
         }
     }
+    
     // when player exits the platform, he will no longer be a child of that platform
     void OnCollisionExit(Collision collision){
         if (collision.gameObject.name == "Player"){ 

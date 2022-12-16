@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     public float jump; // height of jump (value set in Inspector)
     public bool isJumping; // check to see if player is on the floor to let them jump
+    
     // Start is called before the first frame update
     void Start()
     {

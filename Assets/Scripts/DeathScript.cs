@@ -12,12 +12,14 @@ public class DeathScript : MonoBehaviour
     public float rotationSpeed = 0.00001f;
 
     void FixedUpdate() {
+        // rotate enemy objects as they move
         gameObject.transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f, Space.Self);
     }
 
     private void OnCollisionEnter(Collision other){
         if (other.gameObject.CompareTag("Player")){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            // load the scene again to reset it when player dies
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
         }
     }
 }
